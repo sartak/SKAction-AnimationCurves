@@ -195,14 +195,6 @@
                                                                 }]];
 }
 
-+(SKAction *)moveByX:(CGFloat)deltaX y:(CGFloat)deltaY duration:(NSTimeInterval)sec {
-    return [self moveByX:deltaX y:deltaY duration:sec curve:SKActionCurveLinear];
-}
-
-+(SKAction *)moveBy:(CGVector)delta duration:(NSTimeInterval)sec {
-    return [self moveByX:delta.dx y:delta.dy duration:sec curve:SKActionCurveLinear];
-}
-
 +(SKAction *)moveBy:(CGVector)delta duration:(NSTimeInterval)sec curve:(SKActionCurve)curve {
     return [self moveByX:delta.dx y:delta.dy duration:sec curve:curve];
 }

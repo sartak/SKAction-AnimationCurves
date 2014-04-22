@@ -23,7 +23,9 @@ From left to right, it's: linear, ease in (quadratic; same as the builtin), elas
 
 ## Usage
 
-This package provides a category for `SKAction`. Where it makes sense, action factory methods have an additional `curve:` parameter. For example, `SKAction moveTo:CGPointZero duration:2 curve:SKActionCurveElasticEaseOut]`.
+This package provides a category for `SKAction`. Where it makes sense, action factory methods have an additional `curve:` parameter. For example,
+
+    [SKAction moveTo:CGPointZero duration:2 curve:SKActionCurveElasticEaseOut]
 
 I'm not too concerned about clashing with future versions of Sprite Kit, since the nomenclature there is "timing mode", not "animation curve".
 
